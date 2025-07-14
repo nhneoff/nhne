@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #eee;
+  text-align: center;
+}
+
+/* Center content container */
+.container {
+  width: 90%;
+  max-width: 400px;
+  .container {
+  margin-top: 50px; /* pulls everything upward */
+}
+
+}
+
+/* Profile picture style */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 90%;
+  object-fit: cover;
+  display: block; 
+margin: 0 auto 0 auto;
+  margin-bottom: -36px;
+  transform: translate(-2px, -40px); 
+}
+/* Name style */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20.5px;
+}
+
+/* Stack the links vertically */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+    white-space: nowrap;
+}
+
+/* Plain text link style */
+.links a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: color 0.15s;
+}
+
+.links a:hover {
+  color: #444;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #444;
+  width: 90%;
+  margin: 16px auto; /* adds space above/below and centers it */
+}
+
+@media screen and (max-width: 480px) {
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    transform: translate(-2px, -30px);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+
+  .links a {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .divider {
+    width: 80%;
+  }
+}
